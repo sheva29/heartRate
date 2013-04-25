@@ -1,0 +1,53 @@
+body{
+	background: url(http://54.235.78.70/pulse/images/diagonal.png) repeat; 
+	zoom: reset;
+	color: black;
+	font-family: 'Roboto Condensed', sans-serif;
+	margin: 0px;
+}
+
+h1#title{
+	width: 100%;
+	background-color: #29303a;
+	box-shadow: 0px 5px 20px rgba(0,0,0,0.5);	
+	color: white;
+	margin:auto;
+	padding: 20px;
+}
+
+div#graphHolder{
+	width: 500px;
+	height: 250px;
+	margin: auto;
+	margin-top: 100px;
+	padding: 20px;
+	padding-top: 10px;
+	background-color: white;
+	border-radius: 20px;	
+}
+
+#movieTitle{
+	font-size: 18px;
+	margin: 0px 0px 15px 0px;
+}
+
+#graph1{
+	position: absolute;
+}
+
+#graph2{
+	position: absolute;
+}
+
+#key{
+	margin-top: 220px;
+}
+
+#person1{
+	color: #F27927;
+	margin-right: 20px;
+}
+
+#person2{
+	color: #30858E;
+}
