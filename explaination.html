@@ -1,0 +1,229 @@
+<div><!-- http://pepsized.com/merry-scrolling-with-skrollr-js/ -->
+<!DOCTYPE html>
+<html>
+<head>
+	<title>How your suggestions are determined</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+	
+	<link href="css/newStyle.css" rel="stylesheet" type="text/css" />
+	<link href='http://fonts.googleapis.com/css?family=Dosis:200,300,400,500,600,700,800|Roboto+Condensed:300italic,400italic,700italic,400,300,700' rel='stylesheet' type='text/css'>
+	<style>
+body{
+	overflow: auto;
+	height: 100000px;
+	background: #29303a;
+}
+
+#skrollr-body{
+	width:100%;
+	height:100%;
+	position: fixed;
+}
+
+#skrollr-body div{
+	overflow: hidden;
+	position: absolute;
+}
+
+.centered{
+	top:0;
+	bottom:0;
+	left:0;
+	right:0;
+	margin: auto;
+}
+#explainationHolder div{
+	top: 45%;
+}
+
+
+
+	</style>
+</head>
+
+<body>
+	<div id="skrollr-body">
+		<div id="explainationHolder" class="blackInset">
+			<div data-0="top:40%;" 
+				 data-300="top:-50%;"><center><h1 style="color:rgb(199, 30, 104);">How Suggestions are Determined using Heart Rate</h1></center></div>
+				 
+			<div data-0="top:60%;" 
+				 data-300="top:150%;"><center><p>Scroll Down</p><img style="width: 50px;" src="images/arrow.gif" /></center></div>
+				 
+			<div data-100="opacity:1; top:35%; transform:scale(0) translateX(0%);" 
+				 data-400="opacity:1; top:35%; transform:scale(1) translateX(0%);"
+				 data-500="opacity:1; top:35%; transform:scale(1) translateX(0%);" 
+				 data-1000="opacity:1; top:35%; transform:scale(1) translateX(-25%);"
+				 data-1050="opacity:0; top:35%; transform:scale(1) translateX(-25%);"><center><p>This is you:</p></center></div>
+				 
+			<div data-100="top:150%; transform:translateX(0%);" 
+				 data-400="top:40%; transform:translateX(0%);"
+				 data-500="top:40%; transform:translateX(0%);"
+				 data-1000="top:40%; transform:translateX(-25%);"
+				 data-4100="top:40%; transform:translateX(-25%);"
+				 data-4300="top:10%; transform:translateX(-25%);"><center><img src="images/you.png" style="width:8%;"/></center></div>
+				 
+			<div data-1100="transform:translateX(100%); opacity:1;" 
+				 data-1300="transform:translateX(40%); opacity:1;"
+				 data-1700="transform:translateX(40%); opacity:1;"
+				 data-1800="transform:translateX(40%); opacity:0;"><p>You watch a movie...</p></div>
+				 
+			<div data-1300="transform:translateY(800px) translateX(50px); opacity:1" 
+				 data-1500="transform:translateY(40px) translateX(50px); opacity:1;"
+				 data-1700="transform:translateY(40px) translateX(50px); opacity:1;"
+				 data-1800="transform:translateY(40px) translateX(50px); opacity:0;"><center><p style="color:rgb(28, 117, 188); font-size: 25px;">and generate a pulse profile.</p></center></div>
+			
+			<div data-1550="top:34%; left:110%;" 
+				 data-1800="top:34%; left:45%;"
+				 data-4100="top:34%; left:45%;"
+				 data-4300="top:-50%; left:45%;"><img src="images/graph1.png" style="width:30%;"/></div>
+<!-- 			<div data-900="transform:translateY(0px);"><p>And you gave it 5 stars...</p></div> -->
+			<div data-1900="top:-50%; left: 0%; opacity:1;"
+				 data-2100="top:20%; left: 0%; opacity:1;"
+				 data-3200="top:20%; left:0%; opacity:1;"
+				 data-3500="top:20%; left:-75%; opacity:0;"><center><p style="font-size:25px;">Others who watch the same movie generate their own pulse profiles.</p></center></div>
+			
+			<div data-2200="left: 25%; top:100%; opacity:1;"
+				 data-2400="left: 25%; top:80%; opacity:1;"
+				 data-4100="left: 25%; top:80%; opacity:1;"
+				 data-4300="left: 25%; top:50%; opacity:1;"
+				 data-4800="left: 25%; top:50%; opacity:1;"
+				 data-5000="left: 25%; top:55%; opacity:1;"
+				 data-5800="left: 25%; top:55%; opacity:1;"
+				 data-6000="left: 25%; top:55%; opacity:0;"><img src="images/pinkPerson.png" style="width: 5%;"/></div>
+				 
+			<div data-2200="left: 45%; top:100%; opacity:1;"
+				 data-2400="left: 45%; top:80%; opacity:1;"
+				 data-4100="left: 45%; top:80%; opacity:1;"
+				 data-4300="left: 45%; top:50%; opacity:1;"
+				 data-4600="left: 45%; top:50%; opacity:1;"
+				 data-4800="left: 45%; top:50%; opacity:0;"><img src="images/purplePerson.png" style="width: 5%;"/></div>
+				 
+			<div data-2200="left: 65%; top:100%; opacity:1;"
+				 data-2400="left: 65%; top:80%; opacity:1;"
+				 data-4100="left: 65%; top:80%; opacity:1;"
+				 data-4300="left: 65%; top:50%; opacity:1;"
+				 data-4600="left: 65%; top:50%; opacity:1;"
+				 data-4800="left: 65%; top:50%; opacity:0;"><img src="images/turquoisePerson.png" style="width: 5%;"/></div>
+				 
+			<div data-2400="top:34%; left:45%; opacity:0;"
+				 data-2600="top:34%; left:45%; opacity:1;"
+				 data-4100="top:34%; left:45%; opacity:1;"
+				 data-4300="top:-50%; left:45%; opacity:1;"><img src="images/pinkLine.png" style="width:30%;"/></div>
+			<div data-2600="top:34%; left:45%; opacity:0;"
+				 data-2800="top:34%; left:45%; opacity:1;"
+				 data-4100="top:34%; left:45%; opacity:1;"
+				 data-4300="top:-50%; left:45%; opacity:1;"><img src="images/purpleLine.png" style="width:30%;"/></div>
+			<div data-2800="top:34%; left:45%; opacity:0;"
+				 data-3000="top:34%; left:45%; opacity:1;"
+				 data-4100="top:34%; left:45%; opacity:1;"
+				 data-4300="top:-50%; left:45%; opacity:1;"><img src="images/turquoiseLine.png" style="width:30%;"/></div>
+			
+			<div data-3200="top:20%; left: 100%;"
+				 data-3500="top:20%; left: 0%;"
+				 data-4100="top:20%; left: 0%;"
+				 data-4300="top:-50%; left: 0%;"><center><p style="font-size:25px;">Heart Rate compares your pulse data and establishes compatibility ratios.</p></center></div>
+			<div data-3500="top:88%; left:27%; opacity:0;"
+				 data-3700="top:88%; left:27%; opacity:1;"
+				 data-4100="top:88%; left:27%; opacity:1;"
+				 data-4300="top:58%; left:27%; opacity:1;"
+				 data-4800="top:58%; left:27%; opacity:1;"
+				 data-5000="top:63%; left:27%; opacity:1;"
+				 data-5800="top:63%; left:27%; opacity:1;"
+				 data-6000="top:63%; left:27%; opacity:0;"><p style="color:white;">.8</p></div>
+			<div data-3600="top:88%; left:47%; opacity:0;"
+				 data-3800="top:88%; left:47%; opacity:1;"
+				 data-4100="top:88%; left:47%; opacity:1;"
+				 data-4300="top:58%; left:47%; opacity:1;"
+				 data-4600="top:58%; left:47%; opacity:1;"
+				 data-4800="top:58%; left:47%; opacity:0;"><p style="color:white;">.6</p></div>
+			<div data-3700="top:88%; left:67%; opacity:0;"
+				 data-3900="top:88%; left:67%; opacity:1;"
+				 data-4100="top:88%; left:67%; opacity:1;"
+				 data-4300="top:58%; left:67%; opacity:1;"
+				 data-4600="top:58%; left:67%; opacity:1;"
+				 data-4800="top:58%; left:67%; opacity:0;"><p style="color:white;">.5</p></div>
+			
+			<div data-4100="left: 25%; top:100%; opacity:1;"
+				 data-4300="left: 25%; top:77%; opacity:1;"
+				 data-4600="left: 25%; top:77%; opacity:1;"
+				 data-4800="left: 25%; top:77%; opacity:0;"><img src="images/bluePerson.png" style="width: 5%;"/></div>
+			<div data-4100="left: 45%; top:100%;"
+				 data-4300="left: 45%; top:77%;"
+				 data-4800="left: 45%; top:77%;"
+				 data-5000="left: 45%; top:55%;"
+				 data-5800="left: 45%; top:55%;"
+				 data-6000="left: 45%; top:55%;"><img src="images/yellowPerson.png" style="width: 5%;"/></div>
+				 
+			<div data-4100="left: 65%; top:100%; opacity:1;"
+				 data-4300="left: 65%; top:77%; opacity:1;"
+				 data-4800="left: 65%; top:77%; opacity:1;"
+				 data-5000="left: 65%; top:55%; opacity:1;"
+				 data-5800="left: 65%; top:55%; opacity:1;"
+				 data-6000="left: 65%; top:55%; opacity:0;"><img src="images/orangePerson.png" style="width: 5%;"/></div>
+				 
+			<div data-4100="top:110%; left:27%; opacity:1;"
+				 data-4300="top:85%; left:27%; opacity:1;"
+				 data-4600="top:85%; left:27%; opacity:1;"
+				 data-4800="top:85%; left:27%; opacity:0;"><p style="color:white;">.4</p></div>
+			<div data-4100="top:110%; left:47%; opacity:1;"
+				 data-4300="top:85%; left:47%; opacity:1;"
+				 data-4800="top:85%; left:47%; opacity:1;"
+				 data-5000="top:63%; left:47%; opacity:1;"><p style="color:white;">.8</p></div>
+			<div data-4100="top:110%; left:67%; opacity:1;"
+				 data-4300="top:85%; left:67%; opacity:1;"
+				 data-4800="top:85%; left:67%; opacity:1;"
+				 data-5000="top:63%; left:67%; opacity:1;"
+				 data-5800="top:63%; left:67%; opacity:1;"
+				 data-6000="top:63%; left:67%; opacity:0;"><p style="color:white;">.8</p></div>
+			
+			<div data-4400="top:20%; left: 100%;"
+				 data-4600="top:20%; left: 10%;"
+				 data-5100="top:20%; left: 10%;"
+				 data-5300="top:15%; left: 10%;"><center><p style="font-size:25px;">Of those that you have the closest match with...</p></center></div>
+			<div data-5100="top:23%; left: 100%;"
+				 data-5300="top:23%; left: 20%;"><center><p style="font-size:25px;">Heart Rate takes into account your movie ratings...</p></center></div>
+			
+			<div data-5300="left: 24.5%; top:35%; opacity:0;"
+				 data-5500="left: 24.5%; top:35%; opacity:1;"><img src="images/4stars.png" style="width: 7%;"/></div>
+			<div data-5300="left: 26.5%; top:70%; opacity:0;"
+				 data-5500="left: 26.5%; top:70%; opacity:1;"
+				 data-5800="left: 26.5%; top:70%; opacity:1;"
+				 data-6000="left: 26.5%; top:70%; opacity:0;"><img src="images/2stars.png" style="width: 4%;"/></div>
+			<div data-5300="left: 45.5%; top:70%; opacity:0;"
+				 data-5500="left: 45.5%; top:70%; opacity:1;"><img src="images/4stars.png" style="width: 4%;"/></div>
+			<div data-5300="left: 67%; top:70%; opacity:0;"
+				 data-5500="left: 67%; top:70%; opacity:1;"
+				 data-5800="left: 67%; top:70%; opacity:1;"
+				 data-6000="left: 67%; top:70%; opacity:0;"><img src="images/1star.png" style="width: 4%;"/></div>
+			
+			<div data-6100="top:31%; left: 100%;"
+				 data-6400="top:31%; left: 20%;"><center><p style="font-size:25px; color:rgb(141, 198, 63);">And suggests the highest rated movies from your closest matches.</p></center></div>
+				 
+			<div data-6600="top:100%; left:44.5%;"
+				 data-6800="top:80%; left:44.5%;"><img src="images/movie1.png" style="width: 6%;"/></div>
+			<div data-6600="top:100%; left:36%;"
+				 data-6800="top:80%; left:36%;"><img src="images/movie2.png" style="width: 6%;"/></div>
+			<div data-6600="top:100%; left:53%;"
+				 data-6800="top:80%; left:53%;"><img src="images/movie3.png" style="width: 6%;"/></div>
+			
+			<div><img src="images/screen.png" style="position: fixed;
+													top: 0;
+													left: 0;
+													width: 100%;
+													height: 100%;
+													z-index: 2000;"/></div>
+		</div>
+	</div>
+
+	<script src="javascript/skrollr.js"></script>
+	<script type="text/javascript">
+		window.onload = function() {
+         	skrollr.init({
+	        	forceHeight: false
+	        });
+	    }
+    </script>
+</body>
+</html>
+</div>

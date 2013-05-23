@@ -1,0 +1,15 @@
+For each movie
+
+Analysis:
+1) identify average heart rate for this movie
+2) identify peaks 
+	a) locations
+	b) magnitude
+3) identify valleys 
+	a) locations
+	b) magnitude
+	
+For each user:
+1) user
+2) movie name
+3) resting heart rate

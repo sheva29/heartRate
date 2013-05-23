@@ -3,9 +3,9 @@
 ?>
 
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml">
+<!-- <html xmlns="http://www.w3.org/1999/xhtml"> -->
 <head>
-<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<!-- <meta http-equiv="Content-Type" content="text/html; charset=utf-8" /> -->
 <title>Begin a Movie</title>
 <link type="stylesheet" rel="stylesheet" href="css/jquery.css" />
 <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
@@ -119,13 +119,15 @@ $(function(){
 <body>
 	<div id="holder">
 		<center><p>Start Watching a Movie</p></center>
-			<form id="form" name="form" method="post" action="formRecieve.php" style="text-align:center; margin-bottom:20px;">
+			<form id="form" name="form" method="post" action="formInput2.php" style="text-align:center; margin-bottom:20px;">
 				<input id="userName" type="hidden" name="userName" value="<?php echo $userName;?>" />
+				<input type="hidden" name="startTime" value="<?php echo strtotime("now");?>" />
+				
 				<input name="s" value="all" type="hidden" />
 				<input id="poster" name="poster" type="hidden" />
 				<input name="movie" id="q" type="text" size="50" />
         
-				<input name="submit" id="button" type="submit" value="Begin" />
+				<input name="submit" id="button" type="submit" value="Begin Movie" />
 			</form>
 	</div>
 </body>

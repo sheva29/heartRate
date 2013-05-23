@@ -1,5 +1,13 @@
 <?php
-	$userName = $_GET['userName']; 
+	$connection = new MongoClient();
+	$db = $connection -> qandm;
+	$MDcollection = $db -> movieData;
+	$PDcollection = $db -> pulseData;
+	
+	$userName = $_GET['userName'];
+	
+
+	
 ?>
 
 <!Doctype html>
@@ -81,10 +89,26 @@
 		
 		<section id="charts" class="clearfix">
 			<center><h2>My Data</h2></center>
+			<article>
+				<?php $cursor = $MDcollection -> find(array("Username"=> $userName)); 
+					foreach($cursor as $doc) {
+						echo "<p>";
+						echo $doc["Movie"];
+						echo "</p>";		
+					} ?>
+			</article>
 		</section>
 		
 		<section id="popular" class="clearfix">
 			<center><h2>What's Popular</h2></center>
+			<article>
+				<?php $cursor = $MDcollection -> find(); 
+					foreach($cursor as $doc) {
+						echo "<p>";
+						echo $doc["Movie"];
+						echo "</p>";		
+					} ?>
+			</article>
 		</section>
 		
 		<div id="overlay">

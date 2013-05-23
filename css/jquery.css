@@ -1173,3 +1173,21 @@ body .ui-tooltip {
 	filter: Alpha(Opacity=30);
 	border-radius: 8px;
 }
+
+.ui-menu-item .imdbTitle{
+    font-size: 0.9em;
+    font-weight: bold;
+}
+.ui-menu-item .imdbCast{
+    font-size: 0.7em;
+    font-style: italic;
+    line-height: 110%;
+    color: #666;
+}
+.ui-menu-item .imdbImage{
+    float: left;
+    margin-right: 5px;
+}
+.ui-menu-item .clear{
+    clear: both;
+}
